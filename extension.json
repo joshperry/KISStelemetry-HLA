@@ -1,0 +1,13 @@
+{
+  "name": "KISS Telemetry",
+  "apiVersion": "1.0.0",
+  "author": "Josh Perry",
+  "version": "0.0.1",
+  "description": "Decodes BLHeli32/KISS ESC telemetry.",
+  "extensions": {
+    "blheli32hla": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.KISSTelemetryHla"
+    }
+  }
+}
