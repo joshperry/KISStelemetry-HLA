@@ -7,7 +7,7 @@
   "extensions": {
     "blheli32hla": {
       "type": "HighLevelAnalyzer",
-      "entryPoint": "HighLevelAnalyzer.KISSTelemetryHla"
+      "entryPoint": "HighLevelAnalyzer.KissTelemetryHla"
     }
   }
 }
