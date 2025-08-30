@@ -89,8 +89,8 @@ class KissTelemetryHla(HighLevelAnalyzer):
             AnalyzerFrame('temperature', testframes[0].start_time, testframes[0].end_time, { 'temperature': framedata[0] }),
             AnalyzerFrame('voltage', testframes[1].start_time, testframes[2].end_time, { 'voltage': int.from_bytes(framedata[1:3], 'big')*10 }),
             AnalyzerFrame('current', testframes[3].start_time, testframes[4].end_time, { 'current': int.from_bytes(framedata[3:5], 'big')*10 }),
-            AnalyzerFrame('consumption', testframes[5].start_time, testframes[6].end_time, { 'consumption': int.from_bytes(framedata[5:7], 'big')*10 }),
-            AnalyzerFrame('rpm', testframes[7].start_time, testframes[8].end_time, { 'rpm': int.from_bytes(framedata[7:9], 'big')*10 }),
+            AnalyzerFrame('consumption', testframes[5].start_time, testframes[6].end_time, { 'consumption': int.from_bytes(framedata[5:7], 'big') }),
+            AnalyzerFrame('rpm', testframes[7].start_time, testframes[8].end_time, { 'rpm': int.from_bytes(framedata[7:9], 'big')*100 }),
             AnalyzerFrame('checksum', crcframe.start_time, crcframe.end_time, { 'crcresult': 'good' })
         ]
 
